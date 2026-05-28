@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obligatorio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header> 
+        <div>
+            <h3>Programació 1</h3>
+            <h1>Sistema de Gestión (Silvera)(Castro)</h1>
+        </div>
+    </header> 
+    
+    <main>
+    <section id="influencers">
+      <h2>Manejo de influencers</h2>
+
+      <article class="accion">
+        <h3>Alta de influencers</h3>
+        <button type="button">Agregar influencer</button>
+      </article>
+
+      <article>
+        <h3>Datos a agregar del influencer</h3>
+        <form action="#" method="get">
+          
+            <label for="nombre-influencer">Nombre</label>
+            <input id="nombre-influencer" name="nombre-influencer" type="text" required value="Ana Perez">
+            <label for="mail-influencer">Mail</label>
+            <input id="mail-influencer" name="mail-influencer" type="email" required value="ana.perez@correo.com">
+            <label for="comision-influencer">% Comisión</label>
+            <input id="comision-influencer" name="comision-influencer" type="number" required min="0" max="100" value="12">
+            <button type="button">Aceptar</button>
+            <button type="button" class="secundario">Cancelar</button>
+          
+        </form>
+      </article>
+
+      <article>
+        <div class="encabezado-tabla">
+          <h3>Tabla de influencers</h3>
+          <button type="button">Ordenar por nombre</button>
+        </div>
+        <div class="tabla-responsive">
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Mail</th>
+                <th>%Comisión</th>
+                <th>Total a cobrar</th>
+                <th>Etiqueta</th>
+                <th>Detalle</th>
+              </tr>
+              </thead>
+            <tbody>
+              <tr>
+                <td>Ana Pérez</td>
+                <td>ana.perez@email.com</td>
+                <td>20%</td>
+                <td>$600</td>
+                <td><span class="medalla"> 🔥​🌀​</span​>
+                <td><button type="button" class="chico">Ver ventas</button></td>
+              </tr>
+              <tr>
+                <td>Juan Gómez</td>
+                <td>juan.gomez@email.com</td>
+                <td>10%</td>
+                <td>$30</td>
+                <td><span class="medalla sin-venta"></span></td>
+                <td><button type="button" class="chico">Ver ventas</button></td>
+              </tr>
+              <tr>
+                <td>Lucía Martínez</td>
+                <td>lucia.martinez@email.com</td>
+                <td>95%</td>
+                <td>$0</td>
+                <td><span class="medalla">💧​</span></td>
+                <td><button type="button"  class="chico">Ver ventas</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <br> <p><p>información:🔥 Top Comisión (cobra más $) 💧 Cero ventas 🌀 Venta más cara (mayor monto en una sola venta)</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="ventas">
+      <h2>Manejo de articulos</h2>
+
+      <article class="accion">
+        <h3>Alta de articulos</h3>
+        <button type="button">Agregar articulo</button>
+      </article>
+
+      <article>
+        <h3>Datos del articulo a Agregar</h3>
+        <form action="#" method="get">
+          
+            <label for="Código">Código</label>
+            <input id="Código" name="Código" type="text" required value="">
+            <label for="Descripción">Descripción</label>
+            <input id="Descripción" name="Descripción" type="text" required value="">
+            <label for="comision-influencer">% Comisión</label>
+            <input id="comision-influencer" name="comision-influencer" type="number" required min="0" max="100" >
+            <button type="button">Agregar</button>
+            <button type="button" class="secundario">Cancelar</button>
+
+        </form>
+        </article>
+        <br>
+        <br>
+
+
+        <article>
+            <h3>Tabla de Artículos</h3>
+            <table border="1">
+                <tr>
+                    <th><button>Ordenar</button></th>
+                    <th>Descripción</th>
+                    <th>precio</th>
+                </tr>
+                <tr>
+                    <td>A001</td>
+                    <td>Remera algodón básica</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>A002</td>
+                    <td>Zapatillas deportivas</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>A003</td>
+                    <td>Gorra ajustable</td>
+                    <td>$500</td>
+                </tr>
+
+            </table>
+            
+          <div class="campo">
+            <label for="medio-venta">Medio</label>
+            <select id="medio-venta" name="medio-venta">
+              <option>1 - Instagram</option>
+              <option>2 - YouTube</option>
+              <option>3 - X</option>
+              <option>4 - TikTok</option>
+              <option>5 - Facebook</option>
+              <option>6 - Otras</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="cantidad-venta">Cantidad de unidades</label>
+            <input id="cantidad-venta" name="cantidad-venta" type="number" min="1" value="3">
+          </div>
+          <div class="botonera">
+            <button type="button">Aceptar</button>
+            <button type="button" class="secundario">Cancelar</button>
+          </div>
+          </table>
+        </form>
+      </article>
+
+      <article>
+        <h3>Tabla de ventas</h3>
+        <div class="tabla-responsive">
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Número</th>
+                <th>Artículo</th>
+                <th>Influencer</th>
+                <th>Medio</th>
+                <th>Cantidad</th>
+                <th>Acción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>A102</td>
+                <td>Ana Perez</td>
+                <td>1 - Instagram</td>
+                <td>4</td>
+                <td><button type="button" class="chico peligro">Eliminar</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>C318</td>
+                <td>Carla Gomez</td>
+                <td>4 - TikTok</td>
+                <td>1</td>
+                <td><button type="button" class="chico peligro">Eliminar</button></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>B205</td>
+                <td>Ana Perez</td>
+                <td>2 - YouTube</td>
+                <td>5</td>
+                <td><button type="button" class="chico peligro">Eliminar</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article>
+        <h3>Gráfico</h3>
+        <div class="grafico-estatico" aria-label="Espacio reservado para el gráfico de burbujas"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Apellido1, Nombre1 - Estudiante 000000</p>
+</body>
+</html>
