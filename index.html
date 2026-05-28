@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obligatorio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header> 
+        <div>
+            <h3>Programación 1</h3>
+            <h1>Sistema de Gestión (Silvera)(Castro)</h1>
+        </div>
+    </header> 
+    
+    <main>
+    <section id="influencers">
+      <h2>Manejo de influencers</h2>
+
+      <article class="Alta de influencers">
+        <h3 id="alta de influencers">Alta de influencers</h3>
+        <button type="button" class="agregar influencers">Agregar influencer</button>
+      </article>
+
+      <article>
+        <h3 id="titulo datos influencers">Datos a agregar del influencer</h3>
+        <form action="#" method="get">
+          
+            <label for="nombre-influencer">Nombre</label>
+            <input id="nombre-influencer" name="nombre-influencer" type="text" required value="Ana Perez">
+            <label for="mail-influencer">Mail</label>
+            <input id="mail-influencer" name="mail-influencer" type="email" required value="ana.perez@correo.com">
+            <label for="comision-influencer">% Comisión</label>
+            <input id="comision-influencer" name="comision-influencer" type="number" required min="0" max="100" value="12">
+            <button type="button" class="primero">Aceptar</button>
+            <button type="button" class="secundario">Cancelar</button>
+          
+        </form>
+      </article>
+
+      <article>
+        <div class="encabezado-tabla">
+          <h3 id="titulo tabla influencers">Tabla de influencers</h3>
+          <button type="button">Ordenar por nombre</button>
+        </div>
+        <div class="tabla-responsive">
+          <table id="tabla de influencers" border="1">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Mail</th>
+                <th>%Comisión</th>
+                <th>Total a cobrar</th>
+                <th>Etiqueta</th>
+                <th>Detalle</th>
+              </tr>
+              </thead>
+            <tbody>
+              <tr>
+                <td>Ana Pérez</td>
+                <td>ana.perez@email.com</td>
+                <td>20%</td>
+                <td>$600</td>
+                <td><span class="medalla"> 🔥​🌀​</span​>
+                <td><button type="button" class="chico">Ver ventas</button></td>
+              </tr>
+              <tr>
+                <td>Juan Gómez</td>
+                <td>juan.gomez@email.com</td>
+                <td>10%</td>
+                <td>$30</td>
+                <td><span class="medalla sin-venta"></span></td>
+                <td><button type="button" class="chico">Ver ventas</button></td>
+              </tr>
+              <tr>
+                <td>Lucía Martínez</td>
+                <td>lucia.martinez@email.com</td>
+                <td>95%</td>
+                <td>$0</td>
+                <td><span class="medalla">💧​</span></td>
+                <td><button type="button"  class="chico">Ver ventas</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <br> <p><p>información:🔥 Top Comisión (cobra más $) 💧 Cero ventas 🌀 Venta más cara (mayor monto en una sola venta)</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="manejo de articulos">
+      <h2>Manejo de articulos</h2>
+
+      <article class="alta de articulos">
+        <h3>Alta de articulos</h3>
+        <button type="button">Agregar articulo</button>
+      </article>
+
+      <article class="datos del articulo">
+        <h3 id="datos del articulo">Datos del articulo a Agregar</h3>
+        <form action="#" method="get">
+          
+            <label for="Código">Código</label>
+            <input id="Código" name="Código" type="text" required value="">
+            <label for="Descripción">Descripción</label>
+            <input id="Descripción" name="Descripción" type="text" required value="">
+            <label for="comision-influencer">% Comisión</label>
+            <input id="comision-influencer" name="comision-influencer" type="number" required min="0" max="100" >
+            <button type="button" class="primero">Agregar</button>
+            <button type="button" class="secundario">Cancelar</button>
+
+        </form>
+        </article>
+        <br>
+        <article>
+            <h2>Tabla de Artículos</h2>
+            <table id="tabla de articulos" border="1">
+                <tr>
+                    <th><button>Ordenar</button></th>
+                    <th>Descripción</th>
+                    <th>precio</th>
+                </tr>
+                <tr>
+                    <td>A001 ​⭐​</td>
+                    <td>Remera algodón básica</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>A002</td>
+                    <td>Zapatillas deportivas</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>A003</td>
+                    <td>Gorra ajustable</td>
+                    <td>$500</td>
+                </tr>
+            </table>
+            <p>Información: ​⭐​ Artículo más vendido (mayor cantidad de unidades vendidas)</p>
+            
+            <h2 id="titulo ventas">Ventas</h2>
+            <h3 id="titulo alta de ventas">Alta de ventas</h3>
+            <button class="botonera">Agregar venta</button>
+            <h3>Datos de la venta a agregar</h3>
+            <h4>Venta</h4>
+
+            <label for="medio-venta">Nro: 3 Artículo</label>
+            <select id="medio-venta" name="medio-venta">
+              <option>A001</option>
+              <option>A002</option>
+              <option>A003</option>
+            </select>
+
+            <label for="Influencers">Influencers</label>
+            <select id="Influencers">
+                <option>Ana Pérez</option>
+                <option>Juan Gómez</option>
+                <option>Lucía Martínez</option>
+            </select>
+            <label for="Cantidad">Cantidad</label>
+            <input id="Cantidad" name="Cantidad" type="number">
+            <button type="button" class="primero">Agregar</button>
+            <button type="button" class="secundario">Cancelar</button>
+      </article>
+
+      <article>
+        <h3>Tabla de ventas (ordenada por número de venta)</h3>
+        <div class="tabla-responsive">
+          <table border="1"> 
+              <tr>
+                <th>Nro Venta</th>
+                <th>Código de articulo</th>
+                <th>Nombre de influencer</th>
+                <th>Cantidad</th>
+                <th>Medio</th>
+                <th>Acción</th>
+              </tr>
+            <tbody> 
+              <tr>
+                <td>1</td>
+                <td>A001</td>
+                <td>Ana Pérez</td>
+                <td>3</td>
+                <td>1 -Instagram</td>
+                <td><button type="button" class="chico peligro">​❌​</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>A002</td>
+                <td>Juan Gómez</td>
+                <td>1</td>
+                <td>2 -Youtube</td>
+                <td><button type="button" class="chico peligro">​❌​</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article>
+        <h3>Gráfico de burbujas</h3>
+        <div class="grafico-estatico" aria-label="Espacio reservado para el gráfico de burbujas"></div>
+      </article>
+    </section>
+</main>
+  <footer>
+    <p>Sitio para el obligatorio de Programación 1, desarollado por: </p><a href="https://gestion.ort.edu.uy/app/vPrincipal.html?v=1779994953224#/inicio">Silvera, Ignacio - 356761</a>
+    <a href="https://gestion.ort.edu.uy/app/vPrincipal.html?v=1779994953224#/inicio">Castro, Mathías -353595</a>
+    
+</body>
+</html>
